@@ -1,0 +1,327 @@
+{
+	"info": {
+		"_postman_id": "528ed834-dcab-4d25-a672-e0cf4a1bee92",
+		"name": "TruckPad",
+		"description": "TruckPad's case endpoints ",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Get Caminhoneiros",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Accept-Language",
+						"value": "application/json",
+						"type": "text"
+					},
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					},
+					{
+						"key": "Authorization",
+						"value": "{{authorization}}",
+						"type": "text",
+						"disabled": true
+					},
+					{
+						"key": "x-api-key",
+						"value": "Y8vQaxd7bCUqhXAR9O3VnhpCrd9FGCQhYZe2IJzd",
+						"type": "text",
+						"disabled": true
+					}
+				],
+				"url": {
+					"raw": "{{url}}/arrival/900",
+					"host": [
+						"{{url}}"
+					],
+					"path": [
+						"arrival",
+						"900"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get Caminhoneiros Sem Carga",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Accept-Language",
+						"type": "text",
+						"value": "application/json"
+					},
+					{
+						"key": "Content-Type",
+						"type": "text",
+						"value": "application/json"
+					},
+					{
+						"key": "Authorization",
+						"type": "text",
+						"value": "{{authorization}}",
+						"disabled": true
+					},
+					{
+						"key": "x-api-key",
+						"type": "text",
+						"value": "Y8vQaxd7bCUqhXAR9O3VnhpCrd9FGCQhYZe2IJzd",
+						"disabled": true
+					}
+				],
+				"url": {
+					"raw": "{{url}}/trucker/unloaded?page=1",
+					"host": [
+						"{{url}}"
+					],
+					"path": [
+						"trucker",
+						"unloaded"
+					],
+					"query": [
+						{
+							"key": "page",
+							"value": "1"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get Caminhoneiros Carregados",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Accept-Language",
+						"type": "text",
+						"value": "application/json"
+					},
+					{
+						"key": "Content-Type",
+						"type": "text",
+						"value": "application/json"
+					},
+					{
+						"key": "X-Requested-With",
+						"type": "text",
+						"value": "XMLHttpRequest"
+					},
+					{
+						"key": "x-api-key",
+						"type": "text",
+						"value": "Y8vQaxd7bCUqhXAR9O3VnhpCrd9FGCQhYZe2IJzd",
+						"disabled": true
+					}
+				],
+				"url": {
+					"raw": "{{url}}/trucker/loaded",
+					"host": [
+						"{{url}}"
+					],
+					"path": [
+						"trucker",
+						"loaded"
+					],
+					"query": [
+						{
+							"key": "",
+							"value": "",
+							"disabled": true
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get Caminhoneiros Veículo Próprio",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Accept-Language",
+						"type": "text",
+						"value": "application/json"
+					},
+					{
+						"key": "Content-Type",
+						"type": "text",
+						"value": "application/json"
+					},
+					{
+						"key": "Authorization",
+						"type": "text",
+						"value": "{{authorization}}",
+						"disabled": true
+					},
+					{
+						"key": "x-api-key",
+						"type": "text",
+						"value": "Y8vQaxd7bCUqhXAR9O3VnhpCrd9FGCQhYZe2IJzd",
+						"disabled": true
+					}
+				],
+				"url": {
+					"raw": "{{url}}/trucker/truck-owners?page=1",
+					"host": [
+						"{{url}}"
+					],
+					"path": [
+						"trucker",
+						"truck-owners"
+					],
+					"query": [
+						{
+							"key": "page",
+							"value": "1"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get Rotas Agrupado por Tipo",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Accept-Language",
+						"type": "text",
+						"value": "application/json"
+					},
+					{
+						"key": "Content-Type",
+						"type": "text",
+						"value": "application/json"
+					},
+					{
+						"key": "X-Requested-With",
+						"type": "text",
+						"value": "XMLHttpRequest"
+					},
+					{
+						"key": "x-api-key",
+						"type": "text",
+						"value": "Y8vQaxd7bCUqhXAR9O3VnhpCrd9FGCQhYZe2IJzd",
+						"disabled": true
+					}
+				],
+				"url": {
+					"raw": "{{url}}/trucker/routes",
+					"host": [
+						"{{url}}"
+					],
+					"path": [
+						"trucker",
+						"routes"
+					],
+					"query": [
+						{
+							"key": "",
+							"value": "",
+							"disabled": true
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Criar Registro Caminhoneiro",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Accept-Language",
+						"value": "application/json",
+						"type": "text"
+					},
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					},
+					{
+						"key": "X-Requested-With",
+						"value": "XMLHttpRequest",
+						"type": "text"
+					},
+					{
+						"key": "",
+						"value": "",
+						"type": "text",
+						"disabled": true
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t    \"drivers_name\": \"Magdalena Mills\",\n\t\t\"birth_date\": \"1992-12-14\",\n\t\t\"gender\": \"F\",\n\t\t\"is_vehicle_owner\": true,\n\t\t\"is_truck_loaded\": false,\n\t\t\"drivers_license_category\": \"AD\",\n\t\t\"truck_id\": 5,\n\t\t\"origin_lat\": \"5\",\n\t\t\"origin_lng\": \"-60.938292\",\n\t\t\"destination_lat\": \"5.4\",\n\t\t\"destination_lng\": \"-5.7\"\n}"
+				},
+				"url": {
+					"raw": "{{url}}/arrival",
+					"host": [
+						"{{url}}"
+					],
+					"path": [
+						"arrival"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Atualizar Registro Caminhoneiro",
+			"request": {
+				"method": "PUT",
+				"header": [
+					{
+						"key": "Accept-Language",
+						"value": "application/json",
+						"type": "text"
+					},
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					},
+					{
+						"key": "X-Requested-With",
+						"value": "XMLHttpRequest",
+						"type": "text"
+					},
+					{
+						"key": "",
+						"value": "",
+						"type": "text",
+						"disabled": true
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t    \"drivers_name\": \"Magdalena Mills\",\n\t\t\"birth_date\": \"1992-12-01\",\n\t\t\"gender\": \"M\",\n\t\t\"is_vehicle_owner\": true,\n\t\t\"is_truck_loaded\": false,\n\t\t\"drivers_license_category\": \"AD\",\n\t\t\"truck_id\": 3\n}"
+				},
+				"url": {
+					"raw": "{{url}}/arrival/50",
+					"host": [
+						"{{url}}"
+					],
+					"path": [
+						"arrival",
+						"50"
+					]
+				}
+			},
+			"response": []
+		}
+	],
+	"protocolProfileBehavior": {}
+}
