@@ -24,6 +24,6 @@
 
 7- Com isso, a aplicação está pronta pra funcionar. As rotas podem ser encontradas em <strong>routes/api.php</strong>  
 
-8- Para agilizar os testes, eu exportei uma collection contendo todos os endpoints usados na API. Essa collection deve ser importada pelo Postman e se está na raiz do projeto <strong>TruckPad.postman_collection.json</strong>  
+8- Para agilizar os testes, eu exportei uma collection contendo todos os endpoints usados na API. Essa collection deve ser importada pelo Postman e está na raiz do projeto <strong>TruckPad.postman_collection.json</strong>  
 
 9- Para finalizar, os testes unitários estão no diretório <strong>tests/Unit/</strong> e para rodá-los, execute o comando: <strong>./vendor/bin/phpunit</strong>  
