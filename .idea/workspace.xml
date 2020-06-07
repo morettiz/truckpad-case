@@ -282,9 +282,10 @@
     </include_path>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="y" value="23" />
-    <option name="width" value="1440" />
-    <option name="height" value="813" />
+    <option name="x" value="60" />
+    <option name="y" value="27" />
+    <option name="width" value="1306" />
+    <option name="height" value="741" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true">
     <ConfirmationsSetting value="2" id="Add" />

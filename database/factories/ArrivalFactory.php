@@ -35,4 +35,3 @@ $factory->define(Arrival::class, function (Faker $faker) {
         'updated_at' => $createdAt,
     ];
 });
-
